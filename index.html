@@ -8,7 +8,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <title>Login Cadastro</title>
+    <link rel="icon" type="image/png" href="public/iconLogin.png"/>
+    <title>Login / Register</title>
 </head>
 <body>
     <div class="container">
@@ -24,14 +25,18 @@
         </section>
 
         <section class="cadastro">
-            <h1>Cadastro</h1>
+            <h1>Register</h1>
             <input type="text" placeholder="Username"/>
             <input type="email" placeholder="Email"/>
-            <input type="password" placeholder="Password"/>
-            <input type="password" placeholder="Confirm password"/>
-            <button>Register</button>
-            <div>
-                <button onclick="moverParedeLogin('public/imgLogin.svg')">Login</button>
+            <div class="container-passwords">
+                <input type="password" placeholder="Password"/>
+                <input type="password" placeholder="Confirm password"/>
+            </div>
+            <div class="container-buttons">
+                <button>Register</button>
+                <div class="voltar-login">
+                    <button onclick="moverParedeLogin('public/imgLogin.svg')">Login</button>
+                </div>
             </div>
         </section>
 
